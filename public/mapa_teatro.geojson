@@ -1,0 +1,35 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "nombre": "ESCENARIO", "tipo": "infraestructura", "color": "#333333" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-99.1895, 19.4244], [-99.1889, 19.4244], [-99.1889, 19.4242], [-99.1895, 19.4242], [-99.1895, 19.4244]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "nombre": "Platea", "tipo": "seccion", "color": "#76a08a" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-99.1896, 19.4249], [-99.1888, 19.4249], [-99.1889, 19.4245], [-99.1895, 19.4245], [-99.1896, 19.4249]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "nombre": "Preferente", "tipo": "seccion", "color": "#8eb3a2" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-99.1897, 19.4253], [-99.1887, 19.4253], [-99.1888, 19.4249], [-99.1896, 19.4249], [-99.1897, 19.4253]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "nombre": "General", "tipo": "seccion", "color": "#a8c6b7" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-99.1901, 19.4258], [-99.1883, 19.4258], [-99.1885, 19.4253], [-99.1899, 19.4253], [-99.1901, 19.4258]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "nombre": "BAÑOS H", "tipo": "servicio", "color": "#3498db" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-99.1905, 19.4258], [-99.1901, 19.4258], [-99.1901, 19.4256], [-99.1905, 19.4256], [-99.1905, 19.4258]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "nombre": "BAÑOS M", "tipo": "servicio", "color": "#e91e63" },
+      "geometry": { "type": "Polygon", "coordinates": [[[-99.1883, 19.4258], [-99.1879, 19.4258], [-99.1879, 19.4256], [-99.1883, 19.4256], [-99.1883, 19.4258]]] }
+    }
+  ]
+}

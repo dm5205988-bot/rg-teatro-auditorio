@@ -1,0 +1,6 @@
+id,seccion,fila,numero,estado,precio,zona,evento,fecha_venta
+A1,Platea,A,1,vendido,450,central,Concierto Sinfónico,2025-03-21
+A2,Platea,A,2,reservado,450,central,Concierto Sinfónico,
+A3,Platea,A,3,disponible,450,central,Concierto Sinfónico,
+B10,Mezzanine,B,10,disponible,350,lateral,Concierto Sinfónico,
+C5,General,C,5,vendido,200,superior,Concierto Sinfónico,2025-03-20
