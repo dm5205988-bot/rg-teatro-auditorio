@@ -112,13 +112,24 @@ function MapaVenta() {
 
   const handleFinalPayment = (e) => {
     e.preventDefault();
+
+    // 1. Verificamos que haya asientos seleccionados (asumiendo que tu estado se llama selectedSeats)
+    if (!selectedSeats || selectedSeats.length === 0) {
+        alert("Por favor, selecciona al menos un asiento");
+        return;
+    }
+
+    // 2. Creamos una lista de IDs y sumamos el precio total
+    const listaIdsAsientos = selectedSeats.map(s => s.id).join(", ");
+    const precioTotal = selectedSeats.reduce((total, s) => total + s.precio, 0);
+
     const templateParams = {
-      email_cliente: formData.email,
-      nombre_show: nombreShowActual,
-      asiento_id: selectedSeat.id,
-      seccion: selectedSeat.seccion,
-      precio: selectedSeat.precio,
-      fecha: new Date().toLocaleString()
+        email_cliente: formData.email,
+        nombre_show: nombreShowActual,
+        asiento_id: listaIdsAsientos, // Enviará: "A1, A2, A3..."
+        seccion: selectedSeats[0].seccion, // Toma la sección del primer asiento
+        precio: `$${precioTotal}`, // Envía el total sumado
+        fecha: new Date().toLocaleString()
     };
 
     emailjs.send('service_p59i4hq', 'template_02eormd', templateParams, 'N29zc2hKHwErgkQmc')
